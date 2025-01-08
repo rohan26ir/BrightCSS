@@ -6,27 +6,31 @@ import LeftSideBar from '../../Shared/LeftSideBar/LeftSideBar';
 
 const MainLayout = () => {
   return (
-    <div>
-      <header className='sticky top-0 z-10'>
+    <div className="flex flex-col bg-sky-950">
+      {/* Navbar */}
+      <header className="sticky top-0 z-10">
         <Navbar />
       </header>
 
-      <div className='flex flex-col gap-4'>
-
-        <div className='w-[30%] sticky top-0 '>
+      {/* Main Content Area */}
+      <div className="flex flex-1 overflow-hidden">
+        {/* Left Sidebar */}
+        <div className="w-[20%] h-full overflow-y-auto">
           <LeftSideBar />
         </div>
 
-        <div className='w-[70%]'>
-          <main>
+        {/* Main Outlet */}
+        <div className="w-[80%] h-full overflow-y-auto">
+          <main className="p-4">
             <Outlet />
+            
+
+            <div className='mt-3'>
+            <Footer />
+            </div>
           </main>
         </div>
 
-
-      <footer className=''>
-        <Footer />
-      </footer>
 
       </div>
 

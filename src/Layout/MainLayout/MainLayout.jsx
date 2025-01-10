@@ -21,7 +21,7 @@ const MainLayout = () => {
 
         {/* Main Outlet */}
         <div className="w-[80%] h-full overflow-y-auto">
-          <main className="p-4">
+          <main className="p-4 bg-white bg-opacity-5">
             <Outlet />
             
 

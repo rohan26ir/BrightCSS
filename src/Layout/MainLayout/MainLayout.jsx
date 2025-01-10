@@ -6,7 +6,7 @@ import LeftSideBar from '../../Shared/LeftSideBar/LeftSideBar';
 
 const MainLayout = () => {
   return (
-    <div className="flex flex-col bg-sky-950">
+    <div className="bg-[#121C22] h-screen flex flex-col">
       {/* Navbar */}
       <header className="sticky top-0 z-10">
         <Navbar />

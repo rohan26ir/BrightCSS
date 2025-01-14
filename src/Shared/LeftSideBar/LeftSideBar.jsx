@@ -85,7 +85,7 @@ const LeftSideBar = () => {
                   }`
                 }
               >
-                Examples
+                React 
               </NavLink>
             </div>
           )}

@@ -80,7 +80,10 @@ createRoot(document.getElementById('root')).render(
             </div>
 
             <div>
-              <p className="my-1">In <span className="font-bold">src</span> create <span className="font-bold">Router.jsx</span></p>
+              <p className="my-1">
+                In <span className="font-bold">src</span> create{" "}
+                <span className="font-bold">Router.jsx</span>
+              </p>
               <pre className="bg-gray-900 text-white p-4 rounded overflow-x-auto">
                 <code>
                   {`import {
@@ -229,6 +232,41 @@ export default {
             <pre className="bg-gray-900 text-white p-4 rounded overflow-x-auto">
               <code>node: true,</code>
             </pre>
+          </div>
+        </div>
+
+        <div className="bg-gray-50 border-l-4 border-rose-700 rounded-lg p-4 mt-8">
+          <h2 className="text-xl text-center font-bold pb-2 text-rose-600">
+            Copy paste and Install
+          </h2>
+
+          <p className="text-gray-700">
+            Run the following command in your terminal:
+          </p>
+          <pre className="bg-gray-900 text-white p-4 rounded overflow-x-auto">
+            <code>
+              <span className="text-[#F44250]">
+              npm create vite@latest name-of-your-project -- --template react{" "}
+              <br />
+              npm install react-router-dom <br />
+              npm install localforage match-sorter sort-by <br />
+              </span>
+              <span className="text-[#38BDF8]">
+              npm install -D tailwindcss postcss autoprefixer <br />
+              npx tailwindcss init -p <br />
+              </span>
+              <span className="text-[#1AD1A5]">
+              npm i -D daisyui@latest <br />
+              </span>
+            </code>
+          </pre>
+
+          <div className="ml-2 mt-2">
+            <ol class="list-decimal list-inside">
+              <li>React + React Route<sup className="text-rose-600">v6.28.0</sup> (1-3)</li>
+              <li>Tailwind CSS  (4-5)</li>
+              <li>DaisyUI  (last)</li>
+            </ol>
           </div>
         </div>
       </div>
